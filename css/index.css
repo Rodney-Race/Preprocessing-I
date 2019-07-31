@@ -107,18 +107,17 @@ section {
 body {
   line-height: 1;
 }
-ol,
-ul {
-  list-style: none;
+ol, ul {
+  font-size: 130%;
+  color: black;
+  
 }
-blockquote,
-q {
+blockquote, q {
   quotes: none;
 }
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
+blockquote:before, 
+blockquote:after, 
+q:before, q:after {
   content: '';
   content: none;
 }
@@ -135,20 +134,181 @@ body {
   height: 100%;
   
 }
+p {
+  font-size: 130%;
+  line-height: normal;
+  color: black;
+}
 a {
+  
   color: blue;
 }
 h1 {
-  
-  color: solid black;
+  font-size: 200%;
+  text-shadow: 3px 2px red;
+  word-spacing: 10px;
+  letter-spacing: 3px;
+  color: rgb(177, 137, 137);
+}
+:root {
+  --main-bg-color: rgb(199, 114, 4);  
+}
+
+.container {
+
 }
 .topHeader {
   display: flex;
   justify-content: space-between;
   height: 10vh;
   width: 99vw;
-  background-color: rgb(199, 114, 4)
- 
+  background-color: var(--main-bg-color);
+  padding: 5px;  
+}
+.nav-item{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
+}
+.logo {
+  padding: 6% 20% 0% 0%;
+  align-items: right;
+  height: 10vh;
+  border-radius: 100%;
+  
+}
+.profile {
+  
+  text-shadow: 3px 2px red;
+  text-align: center;
+  font-size: 250%;
+}
+.symbol {
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+}
+.top-section {
+  display: flex;
+  margin: 100px;
+}
+.top1 {
+  float: left;
+  width: 700px;
+  padding: 10px;
+}
+.top2 {
+  position: absolute;
+  right: 0px;
+  width: 300px;
+  margin: 15px;
+  padding: 50px;
+}
+.bottom-section {
+  display: flex;
+  margin: 100px;
+}
+.bottom1 {
+  float: left;
+  width: 300px;
+  padding: 10px;
+}
+.bottom2 {
+  position: absolute;
+  right: 0px;
+  width: 300px;
+  margin: 100px;
+  padding: 20px;
+}
+footer {
+  width: 100%;
+  background-color: var(--main-bg-color);
+  padding: 5px;  
+  bottom:0;
+}
+
+footer .footer-content { 
+  margin: 0 auto; 
+  width: 190px;
+}
+h2 {
+  font-size: 140%;
+}
+footer .footer-content h2 {
+  padding: 0;
+  margin: 20px 0;
+}
+
+footer nav {
+  display: flex;
+  justify-content: space-around;
+  
+}
+footer {
+  margin: 20px;
+  color: black;
+  position: fixed;
+  left:0px;
+  bottom:0px;
+  height:150px;
+  width:100%;
+}
+
+footer nav :first-child {
+  margin-left: 0;
+}
+footer a:hover {
+  color: white;
+}
+
+footer .footer-content .copyright {
+  padding: 20px 0;
+  text-align: center;
+}
+.copywright {
+  text-align: center;
+  margin: 1%;
+}
+@media (max-width: 500px) {
+ body {
+  height: 100%;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaSSXjj0CnCptd9dlhyXIB6qKk16qhkHBUz7j5i8Q4IRnBalot9Q");
+  
+}
+p {
+  font-size: 100%;
+  line-height: normal;
+  color: black;
+}
+a {
+  
+  color: blue;
+}
+h1 {
+  font-size: 200%;
+  text-shadow: 3px 2px red;
+  word-spacing: 10px;
+  letter-spacing: 3px;
+  color: rgb(177, 137, 137);
+}
+:root {
+  --main-bg-color: rgb(199, 114, 4);  
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: middle;
+  flex-direction: column;
+}
+.topHeader {
+  display: flex;
+  justify-content: space-between;
+  height: 10vh;
+  width: 99vw;
+  background-color: var(--main-bg-color);
+  padding: 5px;  
 }
 .nav-item{
   display: flex;
@@ -157,17 +317,96 @@ h1 {
   justify-content: space-around;
 }
 .logo {
+  
+  align-items: center;
   height: 10vh;
   border-radius: 100%;
   padding: 0% 20% 0 0;
 }
 .profile {
   text-align: center;
-  padding: 30px;
-  align text: flex-end;
+  font-size: 250%;
 }
 .symbol {
+  length: 100%;
   width: 100%;
-  z-index: -1;
+  display: none;
   position: absolute;
+}
+ .top-section {
+  display: flex;
+  margin: 100px;
+}
+.top1 {
+  float: left;
+  width: 700px;
+  padding: 10px;
+}
+.top2 {
+  position: absolute;
+  right: 0px;
+  width: 300px;
+  margin: 15px;
+  padding: 50px;
+}
+.bottom-section {
+  display: flex;
+  margin: 100px;
+}
+.bottom1 {
+  float: left;
+  width: 300px;
+  padding: 10px;
+}
+.bottom2 {
+  position: absolute;
+  right: 0px;
+  width: 300px;
+  margin: 100px;
+  padding: 20px;
+}
+footer {
+  width: 100%;
+  background-color: var(--main-bg-color);
+  padding: 5px;  
+  
+}
+
+footer .footer-content { 
+  margin: 0 auto; 
+  width: 190px;
+}
+h2 {
+  font-size: 140%;
+}
+footer .footer-content h2 {
+  padding: 0;
+  margin: 20px 0;
+}
+
+footer nav {
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: flex-end;
+  justify-content: center;
+  
+}
+footer {
+  margin: 20px;
+  color: black;
+  
+}
+footer nav :first-child {
+  margin-left: 0;
+}
+footer a:hover {
+  color: white;
+}
+footer .footer-content .copyright {
+  padding: 20px 0;
+  text-align: center;
+}
+.copywright {
+  text-align: center;
+  margin: 1%;
 }
