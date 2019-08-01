@@ -134,6 +134,12 @@ body {
   height: 100%;
   
 }
+:root {
+  --main-bg-color: rgb(199, 114, 4);  
+}
+:root {
+  --main2-bg-color: rgb(97, 161, 23);  
+}
 p {
   font-size: 130%;
   line-height: normal;
@@ -148,14 +154,7 @@ h1 {
   text-shadow: 3px 2px red;
   word-spacing: 10px;
   letter-spacing: 3px;
-  color: rgb(177, 137, 137);
-}
-:root {
-  --main-bg-color: rgb(199, 114, 4);  
-}
-
-.container {
-
+  color: var(--main2-bg-color);
 }
 .topHeader {
   display: flex;
@@ -163,7 +162,8 @@ h1 {
   height: 10vh;
   width: 99vw;
   background-color: var(--main-bg-color);
-  padding: 5px;  
+  padding: 5px; 
+
 }
 .nav-item{
   display: flex;
@@ -175,8 +175,13 @@ h1 {
   padding: 6% 20% 0% 0%;
   align-items: right;
   height: 10vh;
-  border-radius: 100%;
+  border-radius: 50%;
   
+}
+.stark {
+  height: 9vh;
+  border-radius: 50%;
+  padding: 5% 20% 0 0;
 }
 .profile {
   
